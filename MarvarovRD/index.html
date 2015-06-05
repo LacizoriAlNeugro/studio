@@ -1,0 +1,89 @@
+
+<html>
+ <head>
+  <title>canvas</title>
+  <meta charset="utf-8">
+
+  <canvas id="smile" width="3200" height="4200">
+    <p>Ваш браузер не поддерживает рисование.</p>
+  </canvas>
+
+<script type="text/javascript">
+    var myCanvas = document.getElementById('smile');
+     var cxt = myCanvas.getContext('2d');
+      // красим
+      cxt.fillStyle = '#8ED6FF';
+      cxt.fill();
+      cxt.lineWidth = 1;
+      cxt.strokeStyle = 'black';
+      cxt.stroke();
+ 
+    	 // Рисуем правый глаз 
+    	 cxt.fillStyle='white';
+     	 cxt.beginPath( );
+    	 cxt.arc(640,310,8,0,Math.PI*2,true);
+    	 cxt.closePath();
+	 cxt.stroke();
+    	 cxt.fill();
+ 
+	 cxt.fillStyle='white';
+     	 cxt.beginPath( );
+    	 cxt.arc(600,310,8,0,Math.PI*2,true);
+    	 cxt.closePath();
+    	 cxt.stroke();
+    	 cxt.fill();
+    
+    
+	cxt.strokeStyle = 'black';
+	cxt.moveTo(250,350);
+	cxt.lineTo(650,350);
+	cxt.lineTo(740,280);
+	cxt.lineTo(560,280);
+	cxt.lineTo(535,300);
+	cxt.lineTo(250,300);
+	cxt.lineTo(250,350);	
+	cxt.stroke();
+	
+	cxt.strokeStyle = 'black';
+	cxt.moveTo(250,300);
+	cxt.lineTo(490,90);
+	cxt.lineTo(740,280);
+	cxt.stroke();
+	
+	cxt.strokeStyle = 'black';
+	cxt.moveTo(650,280);
+	cxt.lineTo(650,260);
+	cxt.lineTo(350,260);
+	cxt.lineTo(350,280);
+	cxt.lineTo(330,300);
+	cxt.stroke();
+	
+	cxt.strokeStyle = 'black';
+	cxt.moveTo(500,280);
+	cxt.lineTo(380,280);
+	cxt.stroke();
+	cxt.strokeStyle = 'black';
+	cxt.moveTo(415,260);
+	cxt.lineTo(415,185);
+	cxt.lineTo(440,185);
+	cxt.lineTo(440,260);
+	cxt.stroke();
+	cxt.strokeStyle = 'black';
+	cxt.moveTo(440,235);
+	cxt.lineTo(520,235);
+	cxt.lineTo(520,260);
+	cxt.stroke();
+	
+	cxt.strokeStyle = 'black';
+	cxt.moveTo(440,235);
+	cxt.lineTo(490,235);
+	cxt.lineTo(490,120);
+	cxt.stroke();
+	
+ 
+   
+      
+  </script>
+ </head>
+ <body>
+</html>
